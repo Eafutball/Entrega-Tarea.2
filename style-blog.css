@@ -1,0 +1,253 @@
+/* Importación de la fuente Montserrat desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+/* Estilos Generales */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilos del Encabezado */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; /* Altura reducida para el logo */
+  margin-right: 20px;
+}
+
+.header-right a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.header-right a:hover {
+  color: #ffd700;
+}
+
+/* Estilos de la Barra de Navegación */
+.topnav {
+  background-color: #464444;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.topnav a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.topnav a:hover {
+  background-color: #ffd700;
+  color: #333;
+}
+
+/* Estilos de Categoría */
+.category {
+  margin-bottom: 60px;
+}
+
+.category h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333;
+  text-align: center;
+}
+
+/* Estilos de Entradas de Blog */
+.blog-post {
+  background-color: rgb(255, 255, 240);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.blog-post h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.blog-post p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: black;
+  text-align: justify;
+}
+
+.blog-post a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s; /* Ajuste del tiempo de transición */
+}
+.blog-post a:hover{
+  color: gold;
+}
+
+/* Estilos del Contenido Principal */
+main {
+  display: flex;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Estilos de la Barra Lateral */
+.sidebar {
+  background-color: rgb(230, 204, 204);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sidebar h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sidebar-content {
+  margin-top: 10px;
+}
+
+.Barra-Items {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.item a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  width: 100%; /* Imágenes ajustadas al ancho del contenedor */
+}
+
+.item img:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos del Pie de Página */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-column {
+  width: 25%;
+  padding: 0 15px;
+  color: white;
+  text-align: center;
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.footer-column ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.footer-column ul li a:hover {
+  color: gold;
+}
+
+.footer-column p {
+  font-size: 1em;
+  text-align: justify;
+}
+
+.icon-bar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.icon-bar a:hover {
+  color: gold;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+.read-more {
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #ffd700;
+}

@@ -1,0 +1,67 @@
+/* Estilos de la sección de FAQ */
+.faq-section {
+  padding: 80px 0;
+  background-color: rgb(230, 204, 204);
+}
+
+/* Estilos del título de FAQ */
+.faq-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em; /* Aumentar el tamaño del título */
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: "Marck Script", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Agregar efecto de sombra */
+}
+
+/* Estilos del acordeón de FAQ */
+.faq-accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilos del ítem de FAQ */
+.faq-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Estilos de la pregunta de FAQ */
+.faq-question {
+  background-color: rgb(255, 255, 240);
+  padding: 24px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #e0e0e0;
+}
+
+.faq-question h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; /* Utilizar Montserrat para coherencia */
+}
+
+/* Estilos de la respuesta de FAQ */
+.faq-answer {
+  padding: 24px 30px;
+}
+
+.faq-answer p {
+  font-size: 1.1em; /* Ajustar tamaño de fuente */
+  color: black;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif; /* Utilizar Montserrat para coherencia */
+}

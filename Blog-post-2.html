@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secretos de Belleza Revelados</title>
+    <link rel="stylesheet" href="style-blog.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <style>
+      /* Importar la fuente Montserrat desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+/* Variables de colores y fuente */
+:root {
+  --primary-color: #333;  /* Color primario */
+  --secondary-color: #ffd700;  /* Color secundario */
+  --heading-color: #333;  /* Color de los títulos */
+  --font-family: "Montserrat", sans-serif;  /* Familia de fuentes */
+}
+
+/* Estilos generales del cuerpo */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;  /* Cambio de color de fondo */
+}
+
+/* Contenedor de la barra de navegación */
+.container-nav {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+/* Logo */
+.logo img {
+  max-width: 100px;  /* Aumento del tamaño del logo */
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Estilos de la navegación principal */
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav li {
+  margin-right: 30px;  /* Aumento del espacio entre elementos */
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Contenedor principal del blog */
+.container-blog {
+  max-width: 1200px;
+  margin: 20px auto;  /* Margen superior e inferior de 20px y auto para centrar horizontalmente */
+  padding: 20px;  /* Espacio interno */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centra verticalmente los elementos dentro del contenedor */
+  align-items: center;  /* Centra horizontalmente los elementos dentro del contenedor */
+  font-family: var(--font-family);
+  background-color: rgb(255, 255, 240);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Títulos */
+h1, h2, h3, h4 {
+  color: var(--heading-color);
+  text-align: center;
+  margin-bottom: 20px;  /* Ajuste del espacio inferior */
+  color: #333;
+
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.75em;
+}
+
+/* Texto general */
+p {
+  font-size: 1.2em;
+  color: var(--text-color);
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;  /* Ajuste del espacio inferior */
+}
+
+/* Estilos del post del blog */
+.blog-post {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;  /* Ajuste del espacio inferior */
+  width: 100%;
+  max-width: 900px;
+}
+
+.blog-post h3 {
+  font-size: 2.5em;
+  margin-bottom: 15px;  /* Ajuste del espacio inferior */
+  color: #333;
+
+}
+
+.blog-post h4 {
+  font-size: 2em;
+  margin-bottom: 10px;  /* Ajuste del espacio inferior */
+  color: #333;
+
+}
+
+.blog-post p {
+  font-size: 1em;  /* Tamaño de fuente reducido */
+  margin-bottom: 20px;  /* Ajuste del espacio inferior */
+  color: #334;
+}
+
+.blog-post img {
+  display: block;
+  margin: 0 auto 20px;  /* Ajuste del margen inferior */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* Estilos adicionales para el footer */
+.footer {
+  background-color: #333; /* Color de fondo del footer */
+  padding: 60px 0; /* Espaciado interior */
+  text-align: center; /* Centrado del contenido */
+  color: #f9f9f9;
+}
+
+.footer .container {
+  width: 80%; /* Ancho del contenido del footer */
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .footer-content .footer-left,
+.footer .footer-content .footer-right {
+  flex-basis: 48%; /* Ancho de los bloques izquierdo y derecho */
+  text-align: left;
+}
+
+.footer .footer-content h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.footer .footer-content ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+
+}
+
+.footer .footer-content ul li {
+  font-size: 1.6em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer .footer-content .social-links {
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+.footer .footer-content .social-links a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 1.8em;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0 auto;
+}
+
+.footer .footer-content .social-links a:hover {
+  color: gold;
+}
+
+/* Estilos para íconos */
+.footer .footer-content ul li i {
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-nav">
+        <a href="index.html" class="logo"><img src="Logo.jpg" alt="Logo" /></a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html#Nosotros"> Nosotros</a></li>
+            <li><a href="index.html#Servicios"> Servicios</a></li>
+            <li><a href="Blog.html"> Blog</a></li>
+            <li><a href="index.html#Contactos"> Contactos</a></li>
+            <li><a href="index.html#Preguntas"> Preguntas Frecuentes</a></li>
+            <li><a href="index.html#Acerca-De"> Acerca De</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <main>
+        <section id="beauty-secrets">
+          <div class="container-blog">
+            <h1>Secretos de Belleza Revelados</h1>
+
+            <h2>La Rutina de Cuidado de la Piel: La Base de la Belleza</h2>
+            <img src="cuidado de piel.jpg" alt="Rutina de Cuidado de la Piel" />
+            <p>
+              El cuidado de la piel es esencial para una apariencia radiante y
+              saludable. Descubre los pasos fundamentales para una rutina de
+              cuidado de la piel efectiva, desde la limpieza diaria hasta la
+              aplicación de sueros y cremas hidratantes. Exploraremos los
+              beneficios de los ingredientes clave, como la vitamina C y el
+              ácido hialurónico, y cómo pueden transformar tu piel.
+            </p>
+
+            <h2>
+              Maquillaje que Realza tu Belleza: Técnicas y Trucos Profesionales
+            </h2>
+            <img
+              src="maquillaje profesional.jpeg"
+              alt="Maquillaje Profesional"
+            />
+            <p>
+              El maquillaje puede realzar tus rasgos naturales y resaltar tu
+              belleza única. Aprende cómo elegir la base perfecta para tu tono
+              de piel, resaltar tus ojos con técnicas de sombreado y crear
+              labios irresistibles. Exploraremos tendencias de maquillaje
+              actuales y cómo adaptarlas a tu estilo personal.
+            </p>
+
+            <h2>
+              Secretos para un Cabello Deslumbrante: Consejos Prácticos y
+              Tratamientos Especiales
+            </h2>
+            <img src="cabello deslumbrante.jpeg" alt="Cabello Deslumbrante" />
+            <p>
+              Un cabello saludable y radiante es una parte esencial de la
+              belleza. Descubre los secretos para mantener un cabello fuerte,
+              brillante y lleno de vida. Desde consejos para el lavado y
+              acondicionamiento hasta tratamientos especiales para la
+              revitalización del cabello, te ayudaremos a encontrar la rutina
+              perfecta para tu tipo de cabello.
+            </p>
+
+            <h2>
+              Bienestar Interior para una Belleza Duradera: Nutrición, Ejercicio
+              y Autocuidado
+            </h2>
+            <img src="bien estar interior.jpeg" alt="Bienestar Interior" />
+            <p>
+              La belleza verdadera comienza desde adentro. Explora cómo la
+              nutrición adecuada, la actividad física y el autocuidado pueden
+              impactar positivamente en tu apariencia exterior. Aprende la
+              importancia de una dieta balanceada, la práctica de la gratitud y
+              cómo el bienestar emocional influye en tu brillo interior.
+            </p>
+          </div>
+        </section>
+      </main>
+    </main>
+
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <p>
+              Rebeca Studio, un espacio acogedor y cálido que te hará sentir verdaderamente querida y cuidada, donde nuestro equipo especializado brinda una experiencia única, pampering y emocionante, envolviéndote en una atmósfera de tranquilidad y bienestar para que vivas una experiencia de reina por un día.
+            </p>
+            <p>&copy; 2024 Rebeca Studio. Todos los derechos reservados.</p>
+          </div>
+          <div class="footer-right">
+            <h3>Contacto</h3>
+            <ul>
+              <li><i class="fa fa-phone"></i> Contacto: 8766 0248</li>
+            </ul>
+            <h3>Síguenos</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=100063536982418"target="_blank"><i class="fa fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/rebecapizarro.studiosalon/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

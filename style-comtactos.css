@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+/* Estilos de la sección de contacto */
+.contact-section {
+  padding: 80px 0;
+  background-color: rgb(255, 255, 240);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de las filas del formulario */
+.form-row {
+  width: 100%;
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para texto centrado */
+.text {
+  text-align: center;
+  color: #333;
+  font-size: 3em;
+  font-family: "Marck Script", cursive;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.1);;
+}
+
+
+/* Estilos para los campos de entrada */
+.input-data {
+  width: 48%;
+  position: relative;
+}
+
+.input-data input,
+.input-data textarea {
+  display: block;
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 20px 15px 0;
+  font-size: 16px;
+  background-color: transparent;
+  transition: border-color 0.3s ease;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.input-data textarea {
+  height: 120px;
+  resize: none;
+}
+
+.input-data label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: #333;
+  pointer-events: none;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.input-data input:focus ~ label,
+.input-data textarea:focus ~ label,
+.input-data input:valid ~ label,
+.input-data textarea:valid ~ label {
+  color: gold;
+  font-size: 0.8em;
+  top: 0;
+  transform: translateY(-100%);
+}
+
+/* Estilos para el botón de envío */
+.submit-btn {
+  width: 250px; /* Aumentado el ancho del botón */
+  height: 60px; /* Aumentada la altura del botón */
+  background-color: rgb(230, 204, 204);
+  color: #333;
+  font-size: 1.1em; /* Aumentado el tamaño de fuente */
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-radius: 30px; /* Aumentado el radio de borde */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition: background-color 0.3s ease; /* Añadida transición de color de fondo */
+}
+
+.submit-btn:hover {
+  background-color: gold;
+}

@@ -1,0 +1,65 @@
+.gallery-section {
+  background-color: rgb(255, 255, 240); /* Color de fondo */
+  padding: 50px 20px; /* Espaciado interno aumentado */
+  margin: 0 auto; /* Centrar horizontalmente */
+  max-width: 2400px; /* Ancho máximo ajustado */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.gallery-title {
+  font-size: 3em; /* Tamaño de fuente aumentado */
+  font-weight: bold; /* Negrita */
+  text-align: center; /* Alineación centrada */
+  margin-bottom: 40px; /* Margen inferior aumentado */
+  color: #333; /* Color de texto */
+  font-family: "Marck Script", cursive; 
+  margin-top: -10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Añadido sombra de texto */
+
+}
+
+.gallery {
+  display: grid; /* Layout en cuadrícula */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas adaptables con ancho mínimo ajustado */
+  grid-gap: 25px; /* Espacio entre imágenes aumentado */
+  background-color: rgb(255, 255, 240); /* Color de fondo */
+}
+
+.gallery figure {
+  margin: 0; /* Eliminar margen */
+  overflow: hidden; /* Ocultar desbordamiento */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: transform 0.3s ease; /* Transición de transformación */
+  background-color:#ece2e2;
+}
+
+.gallery figure:hover {
+  transform: translateY(-8px); /* Elevación en hover aumentada */
+}
+
+.gallery img {
+  width: 100%; /* Ancho completo */
+  height: 250px; /* Altura fija */
+  object-fit: cover; /* Ajuste del contenido */
+  border-radius: 10px 10px 0 0; /* Bordes redondeados arriba */
+}
+
+.gallery figcaption {
+  font-size: 1.8em; /* Tamaño de fuente reducido */
+  color: #333; /* Color de texto ajustado */
+  padding: 15px; /* Espaciado interno */
+  text-align: center; /* Alineación centrada */
+  font-family: "Monserrat", cursive
+
+}
+
+.gallery-text {
+  margin-top: 50px; /* Margen superior aumentado */
+  font-size: 2.2em; /* Tamaño de fuente aumentado */
+  color: #333; /* Color de texto ajustado */
+  text-align: center; /* Alineación centrada */
+  font-family: "Monserrat", cursive
+
+}

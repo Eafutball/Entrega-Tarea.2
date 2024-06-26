@@ -1,0 +1,73 @@
+/* Import the Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Author Information Section */
+.author-info {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 240);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/* Author Photo */
+.author-photo {
+  flex: 0 0 200px;
+  margin-right: 50px;
+}
+
+.author-photo img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.author-photo img:hover {
+  transform: scale(1.05);
+}
+
+/* Author Details */
+.author-details {
+  flex: 1;
+}
+
+.author-details h2 {
+  color: #333;
+  margin-top: 0;
+  font-size: 4em;
+  font-weight: 700;
+  font-family: "Marck Script", cursive;
+  text-align: left;
+}
+
+.author-details p {
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2em;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .author-info {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .author-photo {
+    flex: 0 0 150px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .author-details h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+}

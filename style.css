@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #e67e22; /* Color naranja cálido */
+  --secondary-color: #f1c40f; /* Color amarillo cálido */
+  --accent-color: #2980b9; /* Color azul claro */
+  --text-color: #333; /* Color de texto gris oscuro */
+  --background-color: #f5f5f5; /* Color de fondo gris claro */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 60px;
+  overflow: hidden;
+}
+
+/* Estilos del encabezado */
+.Encabezado {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 40px;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.menu .logo {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu .imagen-logo {
+  width: 120px;
+  height: auto;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: var(--secondary-color);
+}
+
+/* Estilos del pie de página */
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+}
+
+/* Footer Top Section */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Footer Columns */
+.footer-column {
+  width: 25%;
+  padding: 0 40px;
+  color: white;
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-family: "Monserrat";
+
+}
+
+
+
+.footer-column ul li {
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 1em;
+  text-align: center;
+  list-style-type: none;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Monserrat";
+
+}
+
+.footer-column ul li a:hover {
+  color: gold;
+}
+
+.footer-column p {
+  font-size: 1.3em;
+  text-align: justify;
+  font-family: "Monserrat";
+
+}
+
+.icon-bar {
+  text-align: center; /* Center the container */
+}
+
+.icon-bar a {
+  color: #fff;
+  padding: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block; /* Display the icons inline */
+  margin: 0 5px; /* Add some spacing between the icons */
+}
+
+.icon-bar a:hover {
+  color: gold;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Read More Link */
+.read-more {
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+  text-decoration: none;
+  display: block; /* Add this line to make the element a block-level element */
+  margin: 0 auto; /* Add this line to center the block-level element horizontally */
+  font-family: "Monserrat";
+
+}
+
+
+
+.footer-column a:hover {
+  color: gold;
+}
+.footer-column h3{
+  text-align: center;
+}
+
+

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Descubre mi Mundo Personal
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    
+    <style>
+ @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+body {
+  font-family: 'Montserrat', sans-serif; /* Aplicación de la fuente Montserrat */
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+main {
+  background-color: #e6cccc; /* Cambio de color de fondo */
+  margin: 0 auto;
+  min-height: 2000px; /* Cambiado a min-height para asegurar que siempre ocupe al menos 2000px de altura */
+}
+
+/* Contenedor de la barra de navegación */
+.container-nav {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Color de fondo */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para el encabezado */
+.header {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Logo */
+.logo img {
+  max-width: 80px;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Estilos de la navegación principal */
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav li {
+  margin-right: 20px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: 'Montserrat', sans-serif; /* Aplicación de la fuente Montserrat */
+
+}
+
+.main-nav a:hover {
+  color: #ffd700; /* Color de enlace al pasar el mouse */
+}
+
+/* Contenedor del perfil */
+.container-profile {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Fondo blanco */
+}
+
+/* Estilos del perfil */
+.profile {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección 'Acerca de' */
+.about {
+  margin-bottom: 40px;
+}
+
+.about p {
+  font-size: 1.3em;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+  color: #333; /* Color de texto */
+  font-family: 'Montserrat', sans-serif; /* Aplicación de la fuente Montserrat */
+
+}
+
+/* Estilos de los títulos */
+h1, h2, h3, h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif; /* Aplicación de la fuente Montserrat */
+
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+
+/* Estilos adicionales para el footer */
+.footer {
+  background-color: #333; /* Color de fondo del footer */
+  color: #fff; /* Color del texto */
+  padding: 60px 0; /* Espaciado interior */
+  text-align: center; /* Centrado del contenido */
+}
+
+.footer .container {
+  width: 80%; /* Ancho del contenido del footer */
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .footer-content .footer-left,
+.footer .footer-content .footer-right {
+  flex-basis: 48%; /* Ancho de los bloques izquierdo y derecho */
+  text-align: left;
+}
+
+.footer .footer-content h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.footer .footer-content ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+
+}
+
+.footer .footer-content ul li {
+  font-size: 1.6em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer .footer-content .social-links {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer .footer-content .social-links a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 1.8em;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer .footer-content .social-links a:hover {
+  color: gold;
+}
+
+/* Estilos para íconos */
+.footer .footer-content ul li i {
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-nav">
+        <a href="index.html" class="logo"><img src="Logo.jpg" alt="Logo" /></a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#Nosotros"> Nosotros</a></li>
+            <li><a href="index.html#Servicios"> Servicios</a></li>
+            <li><a href="Blog.html"> Blog</a></li>
+            <li><a href="index.html#Contactos"> Contactos</a></li>
+            <li><a href="index.html#Preguntas"> Preguntas Frecuentes</a></li>
+            <li><a href="index.html#Acerca-De"> Acerca De</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-profile">
+        <h1>Descubre mi Mundo Personal</h1>
+
+        <div class="profile">
+          <img src="Rebeca.jpg" alt="Rebeca Matamoros" />
+          <h2>Rebeca Matamoros</h2>
+          <h2>Rebeca Pizarro Studio Salón - Una Historia de Amor y Sueños</h2>
+        </div>
+
+        <section class="about">
+          <p>
+            Hace 24 años, inicié mis estudios en Toby Brown, impulsada por una
+            pasión por servir, realzar y traer sonrisas a mis clientes. La
+            satisfacción que encuentro en los rostros empoderados, llenos de
+            amor propio, inteligentes y valientes de las mujeres con las que
+            trabajo, me llena de inmensa alegría. Es un honor ser parte de esta
+            noble profesión.
+          </p>
+          <p>
+            Este viaje también me ha bendecido con la oportunidad de conectar
+            con maravillosas amigas y relaciones luminosas. Mi misión es servir,
+            apoyar y brindar bienestar, belleza y alegría. Mi visión es seguir
+            aprendiendo y creciendo, manteniéndome al día con las últimas
+            tendencias mientras también honro los clásicos atemporales, siempre
+            esforzándome por proporcionar glamour, elegancia, estilo y calidad
+            con los mejores productos para asegurar que mis clientas se vean y
+            se sientan impecables.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <p>
+              Rebeca Studio, un espacio acogedor y cálido que te hará sentir verdaderamente querida y cuidada, donde nuestro equipo especializado brinda una experiencia única, pampering y emocionante, envolviéndote en una atmósfera de tranquilidad y bienestar para que vivas una experiencia de reina por un día.
+            </p>
+            <p>&copy; 2024 Rebeca Studio. Todos los derechos reservados.</p>
+          </div>
+          <div class="footer-right">
+            <h3>Contacto</h3>
+            <ul>
+              <li><i class="fa fa-phone"></i> Contacto: 8766 0248</li>
+            </ul>
+            <div class="social-links">
+              <h3>Síguenos</h3>
+              <a href="https://www.facebook.com/profile.php?id=100063536982418"target="_blank"><i class="fa fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/rebecapizarro.studiosalon/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+  </body>
+</html>
